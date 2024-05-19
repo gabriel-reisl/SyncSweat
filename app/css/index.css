@@ -56,7 +56,6 @@ header {
 #clock {
     color: var(--azul);
     text-shadow: 0px 0px 10px rgb(1, 77, 174);
-    cursor: pointer;
     user-select: none;
     padding: 0 0.5vw 1vh;
     font-family: "Montserrat", sans-serif;
