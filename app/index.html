@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SyncSweat</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/effects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="logo">SyncSweat</h1>
+            <h2 id="sub">CONTE CADA GOTA</h2>
+        </div>
+        <div id="clockDiv">
+            <h2 id="clock"></h2>
+        </div>
+    </header>
+    <main>
+        <div class="indexOut" id="select">
+            <h1 id="greetings"></h1>
+            <h2>Qual será seu próximo passo?</h2>
+            <div id="choice">
+                <button class="btns">VISUALIZAR</button>
+                <button class="btns" onclick="goToEdit()">REGISTRAR</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="datePlace">
+        </div> 
+    </footer>
+    <script src="js/render.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SyncSweat</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/edit.css">
+    <link rel="stylesheet" href="../css/effects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="logo" onclick="goToMain()">SyncSweat</h1>
+            <h2 id="sub">CONTE CADA GOTA</h2>
+        </div>
+        <div id="clockDiv">
+            <h2 id="clock"></h2>
+        </div>
+    </header>
+    <main>
+        <section class="editOut" id="editSection">
+            <header>
+                <H1>REGISTRAR ATIVIDADE</H1>
+            </header>
+            <div class>
+                <form action="" id="selection">
+                    <label for="activity">
+                        <input type="radio" name="activity" id="corrida">
+                        <h2>Corrida</h2>
+                    </label>
+                    <label for="activity">
+                        <input type="radio" name="activity" id="caminhada">
+                        <h2>Caminhada</h2>
+                    </label>
+                    <label for="activity">
+                        <input type="radio" name="activity" id="personalizada">
+                        <h2>Atividade personalizada</h2>
+                    </label>
+                    <button class="btns" id="informDetails" onclick="moreDetails(event)">
+                        Detalhar
+                    </button>
+                </form>
+                <form action="" class="details" id="defDetails">
+                    <div>
+                        <label for="unit">Métrica:</label>
+                        <select id="unit" name="unit">
+                            <option value="Passos" selected>Passos</option>
+                            <option value="Metros">Metros</option>
+                            <option value="Repetições">Repetições</option>
+                            <option value="Segundos">Segundos</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Quantidade:</label>
+                        <input type="text" id="quantity">
+                    </div>
+                    <button class="btns" id="sendActiv" onclick="sendDefault(event)">
+                        Enviar
+                    </button>
+                </form>
+                <form action="" class="details" id="cusDetails">
+                    <div>
+                        <label for="">Nome:</label>
+                        <input type="text" id="description">
+                    </div>
+                    <div>
+                        <label for="unit">Métrica:</label>
+                        <select id="unit" name="unit">
+                            <option value="Passos" selected>Passos</option>
+                            <option value="Metros">Metros</option>
+                            <option value="Repetições">Repetições</option>
+                            <option value="Segundos">Segundos</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Quantidade:</label>
+                        <input type="text" id="quantity">
+                    </div>
+                    <button class="btns" id="sendCusActiv" onclick="sendCustom(event)">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="datePlace">
+        </div> 
+    </footer>
+    <script src="../js/renderEdit.js"></script>
+</body>
+</html>

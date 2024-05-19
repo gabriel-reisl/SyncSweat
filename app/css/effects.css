@@ -1,0 +1,36 @@
+@keyframes shutterOutSection {
+    from {
+        height: 0%
+    }
+    to {
+        height: 35vh;
+    }
+}
+@keyframes shutterOutSelect {
+    from {
+        height: 0%
+    }
+    to {
+        height: 30vh;
+    }
+}
+@keyframes shutterInIndex {
+    from {
+        height: 30vh;
+    }
+    to {
+        height: 0%
+    }
+}
+.indexIn {
+    animation: shutterInIndex 0.5s ease-in-out forwards;
+    overflow: hidden;
+}
+.indexOut {
+    animation: shutterOutSelect 0.5s ease-in-out forwards;
+    overflow: hidden;
+}
+.editOut {
+    animation: shutterOutSection 0.5s ease-in-out forwards;
+    overflow: hidden;
+}
