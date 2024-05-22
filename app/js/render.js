@@ -45,7 +45,9 @@ function clockTime(){
         greetings.innerHTML = `<h1>Boa madrugada</h1>`
     }
 }
-
+function reload(){
+window.location.reload(true)
+;}
 
 
 
