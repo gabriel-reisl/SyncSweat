@@ -31,9 +31,8 @@ async function startDatabase () {
         filename: 'app/database/syncsweat.db',
         driver: sqlite3.Database
     });
-
-    await db.exec('CREATE TABLE IF NOT EXISTS activities (activity_id INTEGER PRIMARY KEY AUTOINCREMENT, date DATE, type TEXT, description TEXT)');
-    await db.exec('CREATE TABLE IF NOT EXISTS details (details_id INTEGER PRIMARY KEY AUTOINCREMENT, activity_id INTEGER, quantity REAL, FOREIGN KEY (activity_id) REFERENCES acitivities (activity_id))');
+    await db.exec('CREATE TABLE IF NOT EXISTS activities (activity_id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, metric1 TEXT, metric2 TEXT)');
+    await db.exec('CREATE TABLE IF NOT EXISTS workout (workout_id INTEGER PRIMARY KEY AUTOINCREMENT, activity_id INTEGER, workout_date DATE, metric1_value REAL, metric2_value, FOREIGN KEY (activity_id) REFERENCES acitivities (activity_id))');
 }
 app.on('ready', createWindow);
 app.on('will-quit', async()=>{
