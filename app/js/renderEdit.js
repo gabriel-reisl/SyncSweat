@@ -31,17 +31,6 @@ let selActv;
 let description;
 let quantity;
 
-function moreDetails(event){
-    event.preventDefault();
-    formActivity.style.display = "none";
-    selActv = document.querySelector('input[name="activity"]:checked').id;
-    console.log(selActv);
-    if (selActv === "personalizada"){
-        cusDetail.style.display = "flex";
-    } else {
-        defDetail.style.display = "flex";
-    }
-}
 function sendDefault(event){
     event.preventDefault();
     unit = unitBox.value;

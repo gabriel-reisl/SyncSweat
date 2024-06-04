@@ -25,65 +25,11 @@
             <header>
                 <H1>REGISTRAR ATIVIDADE</H1>
             </header>
-            <div class>
                 <form action="" id="selection">
-                    <label for="activity">
-                        <input type="radio" name="activity" id="corrida">
-                        <h2>Corrida</h2>
-                    </label>
-                    <label for="activity">
-                        <input type="radio" name="activity" id="caminhada">
-                        <h2>Caminhada</h2>
-                    </label>
-                    <label for="activity">
-                        <input type="radio" name="activity" id="personalizada">
-                        <h2>Atividade personalizada</h2>
-                    </label>
-                    <button class="btns" id="informDetails" onclick="moreDetails(event)">
-                        Detalhar
+                    <button id="informDetails">
+                        NOVA ATIVIDADE
                     </button>
                 </form>
-                <form action="" class="details" id="defDetails">
-                    <div>
-                        <label for="unit">Métrica:</label>
-                        <select id="unit" name="unit">
-                            <option value="Passos" selected>Passos</option>
-                            <option value="Metros">Metros</option>
-                            <option value="Repetições">Repetições</option>
-                            <option value="Segundos">Segundos</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="">Quantidade:</label>
-                        <input type="text" id="quantity">
-                    </div>
-                    <button class="btns" id="sendActiv" onclick="sendDefault(event)">
-                        Enviar
-                    </button>
-                </form>
-                <form action="" class="details" id="cusDetails">
-                    <div>
-                        <label for="">Nome:</label>
-                        <input type="text" id="description">
-                    </div>
-                    <div>
-                        <label for="unit">Métrica:</label>
-                        <select id="unit" name="unit">
-                            <option value="Passos" selected>Passos</option>
-                            <option value="Metros">Metros</option>
-                            <option value="Repetições">Repetições</option>
-                            <option value="Segundos">Segundos</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="">Quantidade:</label>
-                        <input type="text" id="quantity">
-                    </div>
-                    <button class="btns" id="sendCusActiv" onclick="sendCustom(event)">
-                        Enviar
-                    </button>
-                </form>
-            </div>
         </section>
     </main>
     <footer>
