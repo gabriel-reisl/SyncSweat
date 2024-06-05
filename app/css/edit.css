@@ -19,6 +19,25 @@
     "header"
     "actArea";
 }
+#informDetails {
+    font-size: 1rem;
+    border-color: var(--azul-sombra);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    position: fixed;
+    bottom: 1vh;
+    width: 25vh;
+    height: 5vh;
+    cursor: pointer;
+    border-radius: 10px;
+    left: 2.5vh;
+    border-style: dashed;
+    background-color: rgba(210, 243, 250, 0.349);
+    color: var(--azul-sombra);
+}
+#informDetails:hover {
+    border-style: solid;
+}
 #editSection header {
     grid-area: header;
     display: flex;
