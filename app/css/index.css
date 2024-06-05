@@ -39,6 +39,7 @@ header {
     cursor: pointer;
 }
 #sub {
+    cursor: pointer;
     color: var(--azul);
     text-shadow: 0px 0px 10px rgb(1, 77, 174);
     user-select: none;
