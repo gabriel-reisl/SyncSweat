@@ -4,6 +4,25 @@
     --azul-dois: rgb(54, 192, 205);
     --cor-secundaria: #2ecc71;
   }
+@media (min-width: 1900px) {
+    .goBack {
+        font-size: 1.5rem;
+    }
+}
+.goBack {
+    position: fixed;
+    top: 0;
+    left: 0.5rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    background-color: transparent;
+    color: rgb(5, 48, 105);
+    cursor: pointer;
+}
+.goBack:hover{
+    color: var(--azul-sombra);
+}
 #editSection {
     padding: 1vh;
     background-color: rgba(185, 239, 253, 0.500);
