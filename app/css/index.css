@@ -52,10 +52,11 @@ header {
 #clockDiv {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
 }
 #clock {
+    margin-top: 0.5rem;
     color: var(--azul);
     text-shadow: 0px 0px 10px rgb(1, 77, 174);
     user-select: none;
